@@ -24,6 +24,9 @@ const About = ({ breeds }) => {
         Search by Country
       </lable>
       <input type="text" value={search} onChange={handleSearch}></input>
+      <ul>
+        {mappedBreeds}
+      </ul>
     </div>
   )
 }
