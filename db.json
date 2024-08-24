@@ -1,0 +1,216 @@
+{
+    "dogBreeds": [
+      {
+        "name": "Coco & Joey",
+        "breed": "Labrador Retriever",
+        "breedType": "Purebred",
+        "origin": "Canada,USA",
+        "popularity": "1",
+        "temperament": [
+          "Cheerful",
+          "Gentle",
+          "Friendly",
+          "Intelligent"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 7,
+        "isAdopted": true,
+        "photo": "https://images.wagwalkingweb.com/media/care/hero/1639768795.4026003/1.png",
+        "id": "1"
+      },
+      {
+        "name": "Tom",
+        "breed": "German Shepard",
+        "breedType": "Purebred",
+        "origin": "Germany",
+        "popularity": "2",
+        "temperament": [
+          "Corageous",
+          "Intelligent",
+          "Loyal",
+          "Watchful"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 3,
+        "isAdopted": true,
+        "photo": "https://d.newsweek.com/en/full/2201052/dog.jpg",
+        "id": "2"
+      },
+      {
+        "name": "Gerald",
+        "breed": "Golden Retriever",
+        "breedType": "Purebred",
+        "origin": "United Kingdom",
+        "popularity": "3",
+        "temperament": [
+          "Intelligent",
+          "Kind",
+          "Friendly",
+          "Confident"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 4,
+        "isAdopted": true,
+        "photo": "https://image.petmd.com/files/inline-images/golden-retriever-2.jpg?VersionId=9HAclc1bWh8XvyNoGi2.UxpdEp1gygb_",
+        "id": "3"
+      },
+      {
+        "name": "Cathy",
+        "breed": "French Bulldog",
+        "breedType": "Purebred",
+        "origin": "France, UK",
+        "popularity": "4",
+        "temperament": [
+          "Playful",
+          "Sociable",
+          "Friendly",
+          "Lively",
+          "Patient"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 58,
+        "isAdopted": true,
+        "photo": "https://cdn.britannica.com/44/233844-050-A0F9F39C/French-bulldog.jpg",
+        "id": "4"
+      },
+      {
+        "name": "Buttercup",
+        "breed": "Bulldog",
+        "breedType": "Purebred",
+        "origin": "United Kingdom",
+        "popularity": "5",
+        "temperament": [
+          "Friendly",
+          "Docile",
+          "Willful",
+          "Gregarious"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 77,
+        "isAdopted": true,
+        "photo": "https://dogtime.com/wp-content/uploads/sites/12/2011/01/GettyImages-168620477-e1691273341205.jpg?w=1024",
+        "id": "5"
+      },
+      {
+        "name": "Mona",
+        "breed": "Beagle",
+        "breedType": "Purebred",
+        "origin": "United Kingdom",
+        "popularity": "6",
+        "temperament": [
+          "Gentle",
+          "Intelligent",
+          "Even Tempered",
+          "Determined"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 72,
+        "isAdopted": true,
+        "photo": "https://image.petmd.com/files/styles/978x550/public/2022-10/beagle-dog.jpg",
+        "id": "6"
+      },
+      {
+        "name": "Oscar",
+        "breed": "Poodle",
+        "breedType": "Purebred",
+        "origin": "Germany, France",
+        "popularity": "7",
+        "temperament": [
+          "Intelligent",
+          "Faithful",
+          "Trainable",
+          "Instinctual"
+        ],
+        "hypoallergenic": "Yes",
+        "intelligence": 2,
+        "isAdopted": false,
+        "photo": "https://cdn.britannica.com/39/233239-050-50C0C3C5/standard-poodle-dog.jpg",
+        "id": "7"
+      },
+      {
+        "name": "Candy",
+        "breed": "Rottweiler",
+        "breedType": "Purebred",
+        "origin": "Germany",
+        "popularity": "8",
+        "temperament": [
+          "Intelligent",
+          "Corageous",
+          "Fearless",
+          "Confident"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 9,
+        "isAdopted": false,
+        "photo": "https://dogtime.com/wp-content/uploads/sites/12/2023/11/GettyImages-1198147566.jpg?resize=1200,630",
+        "id": "8"
+      },
+      {
+        "name": "Snout",
+        "breed": "German Shorthaired Pointer",
+        "breedType": "Purebred",
+        "origin": "Germany",
+        "popularity": "9",
+        "temperament": [
+          "Intelligent",
+          "Trainable",
+          "Boisterous",
+          "Cooperative"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 9,
+        "isAdopted": false,
+        "photo": "https://static1.squarespace.com/static/5b3fc87b45776e887e966e82/601b7ed16060d75410ff75ea/640a19bc0b0fc31e89847cfc/1683747731059/1-1.jpg?format=1500w",
+        "id": "9"
+      },
+      {
+        "name": "Sunshine",
+        "breed": "Yorkshire Terrier",
+        "breedType": "Purebred",
+        "origin": "United Kingdom",
+        "popularity": "10",
+        "temperament": [
+          "Independent",
+          "Intelligent",
+          "Corageous",
+          "Confident"
+        ],
+        "hypoallergenic": "Yes",
+        "intelligence": 27,
+        "isAdopted": true,
+        "photo": "https://cdn.britannica.com/49/233849-050-2ECC4F03/Yorkshire-terrier-dog-running.jpg",
+        "id": "10"
+      },
+      {
+        "name": "Pickles",
+        "breed": "Boxer",
+        "breedType": "Purebred",
+        "origin": "Germany",
+        "popularity": "11",
+        "temperament": [
+          "Playful",
+          "Friendly",
+          "Devoted",
+          "Loyal"
+        ],
+        "hypoallergenic": "No",
+        "intelligence": 48,
+        "isAdopted": false,
+        "photo": "https://cdn.britannica.com/46/233846-050-8D30A43B/Boxer-dog.jpg",
+        "id": "11"
+      },
+      {
+        "id": "463e",
+        "name": "Plant",
+        "breed": "German Shepard",
+        "breedType": "Purebred",
+        "origin": "Germany",
+        "popularity": "3",
+        "temperament": "Cool, Calm, Collected",
+        "hypoallergenic": "No",
+        "intelligence": "54",
+        "isAdopted": true,
+        "photo": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2020/03/30104511/German-Shepherd-Dog-standing-stacked-in-profile-in-the-park-scaled.jpg"
+      }
+    ]
+  }
