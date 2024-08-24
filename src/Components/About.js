@@ -18,7 +18,12 @@ const About = ({ breeds }) => {
 
   return (
     <div>
-      
+      <h1>Let's find the Pet You would like to Adopt</h1>
+      <h2>Search by Country: USA, Canada, Germany, United Kingdom(UK), France</h2>
+      <lable>
+        Search by Country
+      </lable>
+      <input type="text" value={search} onChange={handleSearch}></input>
     </div>
   )
 }
