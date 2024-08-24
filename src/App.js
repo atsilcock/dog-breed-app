@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './Components /NavBar';
+import HomePage from './Pages/HomePage';
+import About from './Components /About';
+import Give from './Components /Give';
 
 function App() {
+  const[breeds, setBreeds] = useState([])
+
+  
+
+useEffect(()=>{
+  fetch("http://localhost:4000/dogBreeds")
+  .then(response => response.json())
+  .then(data => setBreeds(data))
+  .catch(error => console.error("Not fetching information"))
+},[])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <h1>Hello</h1>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About breeds={breeds}/>} />
+        <Route path="/give" element={<Give />} />
+      </Routes>
+    </Router>
   );
 }
 
