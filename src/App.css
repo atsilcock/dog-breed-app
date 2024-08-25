@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.pet-image {
+  width: 240px;   
+  height: 400px;   
+  object-fit: cover;  
+  border: 2px solid #ccc;  
+  border-radius: 8px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+.home-header{
+  font-family: monospace;
+}
+
+.intro-paragraph {
+  max-width: 1200px; 
+  color:rgb(189, 134, 107);
+  letter-spacing: 2px;
+  font-family: monospace;
+  margin: 0 left;
+  padding: 20px; 
+  background-color: #fff; 
+  border-radius: 8px; 
+}
