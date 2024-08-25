@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './Components /NavBar';
+import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage';
-import About from './Components /About';
-import Give from './Components /Give';
+import About from './Components/About';
+import Give from './Components/Give';
 
 function App() {
   const[breeds, setBreeds] = useState([])

@@ -10,7 +10,7 @@ const About = ({ breeds }) => {
   }
 
    const filterBreeds = breeds.filter((breed) => {
-    return breeds.origin.toLowerCase().includes(search.toLowerCase)
+    return breed.origin.toLowerCase().includes(search.toLowerCase)
    })
    console.log(filterBreeds)
 
