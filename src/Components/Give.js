@@ -7,7 +7,10 @@ const Give = () => {
     const [origin, setOrigin] = useState("")
     const [popularity, setPopularity] = useState("")
     const [temperament, setTemperament] = useState("")
-    
+    const [hypoallergenic, setHypoallergenic] = useState("")
+    const [intelligence, setIntelligence] = useState("")
+    const [isAdopted, setIsAdopted] = useState("")
+    const [photo, setPhoto] = useState("")
 
 
   return (
