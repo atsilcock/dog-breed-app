@@ -3,7 +3,6 @@ import PetCard from './PetCard'
 
 const About  = ({ breeds }) => {
   const[search, setSearch] = useState("")
-  console.log(search)
   
 
   function handleSearch (event){
