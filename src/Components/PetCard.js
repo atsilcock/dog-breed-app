@@ -19,7 +19,20 @@ function handleButton(){
 }
   return (
     <div>
-      
+      <img src={breed.photo} alt={breed.name} className="pet-image"></img>
+      <ul>
+        <li>
+            Name: {breed.name}
+            Breed: {breed.breed}
+            Breed Type: {breed.breedType}
+            Origin of Country: {breed.origin}
+            How Popular is {breed.Name}? (1-10): {breed.popularity}
+            Temperament: <li>{breed.temperament}</li>
+            Hypoallergenic: {breed.hypoallergenic}
+            Intelligence (1-100): {breed.intelligence}
+        </li>
+      </ul>
+      <button onClick={handleButton}>{button ? "Adopted" : "Not Adopted"} </button>
     </div>
   )
 }
