@@ -76,11 +76,34 @@ const Give = () => {
         .then(response => response.json())
     }
 
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default Give
+    return (
+        <div>
+          <h1>"We understand"</h1>
+          <form onSubmit={handleSubmit} style={{display: "flex",flexDirection:"column", width:"450px"}}>
+            <label>Name</label>
+            <input type="text" value={name} onChange={updateName}></input>
+            <label>Breed</label>
+            <input type="text" value={breed} onChange={updateBreed}></input>
+            <label>Breed Type</label>
+            <input type="text" value={breedType} onChange={updateBreedType}></input>
+            <label>Origin of Country</label>
+            <input type="text" value={origin} onChange={updateOrigin}></input>
+            <label>Popularity (1-10)</label>
+            <input type="text" value={popularity} onChange={updatePopularity}></input>
+            <label>Temperament</label>
+            <input type="text" value={temperament} onChange={updateTemperament}></input>
+            <label>Hypoallergenic (Yes or No)</label>
+            <input type="text" value={hypoallergenic} onChange={updateHypoallergenic}></input>
+            <label>Intelligence  (1-100)</label>
+            <input type="text" value={intelligence} onChange={updateIntelligence}></input>
+            <label>Adopted Status </label>
+            <input type="text" value={isAdopted} onChange={updateIsAdopted}></input>
+            <label>Picture of Pet</label>
+            <input type="text" value={photo} onChange={updatePhoto}></input>
+            <input type="submit"></input>
+          </form>
+        </div>
+      )
+    }
+    
+    export default Give
