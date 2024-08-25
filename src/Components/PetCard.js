@@ -28,8 +28,8 @@ function handleButton(){
       <p> Breed: {breed.breed}</p>
       <p> Breed Type: {breed.breedType} </p>
       <p> Origin of Country: {breed.origin} </p>
-      <p> How Popular is {breed.Name}? (1-10): {breed.popularity} </p>
-      Temperament: {breed.temperament}
+      <p> How Popular is {breed.name} ? (1-10): {breed.popularity} </p>
+      <p> Temperament: {breed.temperament}</p>
       <p>Hypoallergenic: {breed.hypoallergenic}</p>
       <p>Intelligence (1-100): {breed.intelligence}</p>
       
