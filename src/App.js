@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage';
-import About from './Components/About';
+import Adopt from './Components/Adopt';
 import Give from './Components/Give';
 
 function App() {
   const[breeds, setBreeds] = useState([])
-  
+  console.log(breeds)
 
   
 
@@ -24,7 +24,7 @@ useEffect(()=>{
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<About breeds={breeds}/>} />
+        <Route path="/adopt" element={<Adopt breeds={breeds}/>} />
         <Route path="/give" element={<Give />} />
       </Routes>
     </Router>
