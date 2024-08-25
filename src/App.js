@@ -11,7 +11,7 @@ function App() {
   
 
 useEffect(()=>{
-  fetch("http://localhost:4000/dogBreeds")
+  fetch("http://localhost:3000/dogBreeds")
   .then(response => response.json())
   .then(data => setBreeds(data))
   .catch(error => console.error("Not fetching information"))

@@ -52,7 +52,7 @@ const Give = () => {
   function handleSubmit(event){
     event.preventDefault()
 
-    fetch("http://localhost:4000/dogBreeds", {
+    fetch("http://localhost:3000/dogBreeds", {
       method: "POST",
       headers: {
         "Content-Type" : "application/json"
