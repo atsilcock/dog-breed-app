@@ -28,6 +28,30 @@ const Give = () => {
         setOrigin(event.target.value)
     }
 
+    function updatePopularity(event){
+        setPopularity(event.target.event)
+    }
+
+    function updateTemperament(event){
+        setTemperament(event.target.value)
+    }
+
+    function updateHypoallergenic(event){
+        setHypoallergenic(event.target.value)
+    }
+
+    function updateIntelligence(event){
+        setIntelligence(event.target.value)
+    }
+
+    function updateIsAdopted(event){
+        setIsAdopted(event.target.value)
+    }
+
+    function updatePhoto(event){
+        setPhoto(event.target.value)
+    }
+
   return (
     <div>
       
