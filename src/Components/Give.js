@@ -12,6 +12,21 @@ const Give = () => {
     const [isAdopted, setIsAdopted] = useState("")
     const [photo, setPhoto] = useState("")
 
+    function updateName(event){
+        setName(event.target.value)
+    }
+
+    function updateBreed(event){
+        setBreed(event.target.name)
+    }
+
+    function updateBreedType(event){
+        setBreedType(event.target.name)
+    }
+
+    function updateOrigin(event){
+        setOrigin(event.target.value)
+    }
 
   return (
     <div>
