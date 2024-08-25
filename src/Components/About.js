@@ -13,7 +13,7 @@ const About  = ({ breeds }) => {
   const filterBreeds = breeds.filter((breed) => {
     return breed.origin.toLowerCase().includes(search.toLowerCase())
   })
-  console.log(filterBreeds)
+  
   
 const mappedBreeds = filterBreeds.map((breed) => <PetCard key={breed.id} breed={breed}/>)
   

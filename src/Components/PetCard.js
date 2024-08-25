@@ -6,7 +6,7 @@ const PetCard = ({ breed }) => {
 
 function handleButton(){
   setButton(!button)
-  fetch(`http://localhost:4000/dogBreeds/${breed.id}`, {
+  fetch(`http://localhost:3000/dogBreeds/${breed.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type" : "application/json"

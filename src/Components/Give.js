@@ -72,6 +72,16 @@ const Give = () => {
       })
     })
     .then(response => response.json())
+    setName("")
+    setBreed("")
+    setBreedType("")
+    setOrigin("")
+    setPopularity("")
+    setTemperament("")
+    setHypoallergenic("")
+    setIntelligence("")
+    setIsAdopted(false)
+    setPhoto("")
 }
 
 
