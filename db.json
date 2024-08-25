@@ -127,10 +127,7 @@
         "origin": "Germany",
         "popularity": "9",
         "temperament": [
-          "Intelligent",
-          "Trainable",
-          "Boisterous",
-          "Cooperative"
+          "Intelligent, Trainable, Boisterous, Cooperative"
         ],
         "hypoallergenic": "No",
         "intelligence": 9,
@@ -145,10 +142,7 @@
         "origin": "United Kingdom",
         "popularity": "10",
         "temperament": [
-          "Independent",
-          "Intelligent",
-          "Corageous",
-          "Confident"
+          "Independent, Intelligent, Corageous, Confident"
         ],
         "hypoallergenic": "Yes",
         "intelligence": 27,
@@ -163,10 +157,7 @@
         "origin": "Germany",
         "popularity": "11",
         "temperament": [
-          "Playful",
-          "Friendly",
-          "Devoted",
-          "Loyal"
+          "Playful, Friendly, Devoted, Loyal"
         ],
         "hypoallergenic": "No",
         "intelligence": 48,
