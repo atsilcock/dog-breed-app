@@ -52,6 +52,30 @@ const Give = () => {
         setPhoto(event.target.value)
     }
 
+    function handleSubmit(event){
+        event.preventDefault()
+
+        fetch("http://localhost:4000/dogBreeds", {
+            method: "POST", 
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify({
+                name: name, 
+                breed: breed, 
+                breedType: breedType, 
+                origin: origin, 
+                popularity: popularity, 
+                temperament: temperament, 
+                hypoallergenic: hypoallergenic, 
+                intelligence: intelligence, 
+                isAdopted: isAdopted, 
+                photo: photo
+            })
+        })
+        .then(response => response.json())
+    }
+
   return (
     <div>
       
