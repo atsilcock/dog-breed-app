@@ -38,7 +38,7 @@
 }
 
 .pet-image {
-  width: 240px;   
+  width: 350;   
   height: 400px;   
   object-fit: cover;  
   border: 2px solid #ccc;  
