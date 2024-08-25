@@ -24,12 +24,15 @@ function handleButton(){
     <div>
      <img src={breed.photo} alt={breed.name} className="pet-image"></img>
     <ul>
-      <li>
-      Name: {breed.name} <br />
-      Breed: {breed.breed} <br />
-      Breed Type: {breed.breedType} <br />
-      Origin of Country: {breed.origin} <br />
-      </li>
+      <h2> Name: {breed.name}</h2>
+      <p> Breed: {breed.breed}</p>
+      <p> Breed Type: {breed.breedType} </p>
+      <p> Origin of Country: {breed.origin} </p>
+      <p> How Popular is {breed.Name}? (1-10): {breed.popularity} </p>
+      Temperament: {breed.temperament}
+      <p>Hypoallergenic: {breed.hypoallergenic}</p>
+      <p>Intelligence (1-100): {breed.intelligence}</p>
+      
     </ul>
     <button onClick={handleButton}>{button ? "Adopted" : "Not Adopted"}</button>
       
