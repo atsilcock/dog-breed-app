@@ -7,6 +7,7 @@ import Give from './Components/Give';
 
 function App() {
   const[breeds, setBreeds] = useState([])
+  console.log(breeds)
 
   
 
@@ -24,7 +25,7 @@ useEffect(()=>{
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/adopt" element={<Adopt breeds={breeds}/>} />
-        <Route path="/give" element={<Give />} />
+        <Route path="/give" element={<Give breeds={breeds} setBreeds={setBreeds}/>} />
       </Routes>
     </Router>
   );

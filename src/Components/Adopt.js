@@ -1,35 +1,37 @@
-import React, {useState} from 'react'
-import PetCard from './PetCard'
+import React, { useState } from 'react';
+import PetCard from './PetCard';
 
-const About  = ({ breeds }) => {
-  const[search, setSearch] = useState("")
-  
+const Adopt = ({ breeds }) => {
+  const [isAdopted, setIsAdopted] = useState(false);
 
-  function handleSearch (event){
-    setSearch(event.target.value)
+  function handleFilterChange(event) {
+    setIsAdopted(event.target.value === 'Adopted');
   }
-  
-  const filterBreeds = breeds.filter((breed) => {
-    return breed.origin.toLowerCase().includes(search.toLowerCase())
+
+  const filteredBreeds = breeds.filter((breed) => {
+    if (isAdopted) {
+      return breed.isAdopted === true;
+    } else {
+      return breed.isAdopted === false;
+    }
   })
-  
-  
-const mappedBreeds = filterBreeds.map((breed) => <PetCard key={breed.id} breed={breed}/>)
-  
+
+  console.log(filteredBreeds)
+
+  const mappedBreeds = filteredBreeds.map((breed) => (
+    <PetCard key={breed.id} breed={breed} />
+  ));
 
   return (
     <div>
-      <h1>Let's Find the Pet You want to Adopt</h1>
-      <h2>Search by Country: USA, Canada, Germany, United Kingdom(UK), France</h2>
-      <label>
-        Search by Country
-      </label>
-      <input type="text" value={search} onChange={handleSearch}></input>
-      <ul>
-      {mappedBreeds}
-      </ul>
+      <h1>Let's Find the Pet You Want to Adopt</h1>
+      <select value={isAdopted ? 'Adopted' : 'Not Adopted'} onChange={handleFilterChange}>
+        <option value="Adopted">Adopted</option>
+        <option value="Not Adopted">Not Adopted</option>
+      </select>
+      <ul>{mappedBreeds}</ul>
     </div>
-  )
-}
+  );
+};
 
-export default About 
+export default Adopt;

@@ -56,7 +56,7 @@
       ],
       "hypoallergenic": "No",
       "intelligence": 58,
-      "isAdopted": true,
+      "isAdopted": false,
       "photo": "https://cdn.britannica.com/44/233844-050-A0F9F39C/French-bulldog.jpg",
       "id": "4"
     },
@@ -86,7 +86,7 @@
       ],
       "hypoallergenic": "No",
       "intelligence": 72,
-      "isAdopted": true,
+      "isAdopted": false,
       "photo": "https://image.petmd.com/files/styles/978x550/public/2022-10/beagle-dog.jpg",
       "id": "6"
     },
@@ -101,7 +101,7 @@
       ],
       "hypoallergenic": "Yes",
       "intelligence": 2,
-      "isAdopted": false,
+      "isAdopted": true,
       "photo": "https://cdn.britannica.com/39/233239-050-50C0C3C5/standard-poodle-dog.jpg",
       "id": "7"
     },
@@ -116,7 +116,7 @@
       ],
       "hypoallergenic": "No",
       "intelligence": 9,
-      "isAdopted": false,
+      "isAdopted": true,
       "photo": "https://dogtime.com/wp-content/uploads/sites/12/2023/11/GettyImages-1198147566.jpg?resize=1200,630",
       "id": "8"
     },
@@ -131,7 +131,7 @@
       ],
       "hypoallergenic": "No",
       "intelligence": 9,
-      "isAdopted": false,
+      "isAdopted": true,
       "photo": "https://static1.squarespace.com/static/5b3fc87b45776e887e966e82/601b7ed16060d75410ff75ea/640a19bc0b0fc31e89847cfc/1683747731059/1-1.jpg?format=1500w",
       "id": "9"
     },
@@ -188,7 +188,7 @@
       "temperament": "hyper, cozy",
       "hypoallergenic": "No",
       "intelligence": "89",
-      "isAdopted": false,
+      "isAdopted": true,
       "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPV9aLfwg83WSuZG07nxJ5z_o6GjAxtWd4Mxeh2r4UKgKLFofx"
     }
   ]

@@ -16,6 +16,9 @@ function handleButton(){
     })
   })
   .then(response => response.json())
+  .then(updateBreed => {
+    setButton(updateBreed.isAdopted)
+  })
   
 }
 
@@ -35,6 +38,7 @@ function handleButton(){
       
     </ul>
     <button onClick={handleButton}>{button ? "Adopted" : "Not Adopted"}</button>
+  
       
     </div>
   )

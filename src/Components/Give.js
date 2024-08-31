@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 //create a form that that a user can fill out based on 
 //defined inputs that will persist to the backend and add a new pet object.
 
-const Give = () => {
+const Give = ( {breeds, setBreeds}) => {
 
   const [name, setName] = useState("")
   const [breed, setBreed] = useState("")
@@ -52,26 +52,31 @@ const Give = () => {
   function handleSubmit(event){
     event.preventDefault()
 
+    const dogJson =  JSON.stringify({
+      name: name,
+      breed: breed,
+      breedType: breedType,
+      origin:origin,
+      popularity:popularity,
+      temperament:temperament,
+      hypoallergenic:hypoallergenic,
+      intelligence:intelligence,
+      isAdopted:isAdopted,
+      photo:photo
+
+    })
+    console.log(dogJson)
+
     fetch("http://localhost:3000/dogBreeds", {
       method: "POST",
       headers: {
         "Content-Type" : "application/json"
       }, 
-      body: JSON.stringify({
-        name: name,
-        breed: breed,
-        breedType: breedType,
-        origin:origin,
-        popularity:popularity,
-        temperament:temperament,
-        hypoallergenic:hypoallergenic,
-        intelligence:intelligence,
-        isAdopted:isAdopted,
-        photo:photo
-
-      })
+      body: dogJson
     })
     .then(response => response.json())
+    .then(response => setBreeds([...breeds, response]))
+    .catch(error => console.log(error))
     setName("")
     setBreed("")
     setBreedType("")
@@ -83,6 +88,7 @@ const Give = () => {
     setIsAdopted(false)
     setPhoto("")
 }
+
 
 
   return (
@@ -106,7 +112,9 @@ const Give = () => {
         <label>Intelligence  (1-100)</label>
         <input type="text" value={intelligence} onChange={updateIntelligence}></input>
         <label>Adopted Status </label>
-        <input type="text" value={isAdopted} onChange={updateIsAdopted}></input>
+        <select disabled value={isAdopted} onChange={updateIsAdopted}>
+          <option value={false}>Not Adopted</option>
+        </select>
         <label>Picture of Pet</label>
         <input type="text" value={photo} onChange={updatePhoto}></input>
         <input type="submit"></input>
@@ -116,3 +124,6 @@ const Give = () => {
 }
 
 export default Give
+
+
+
