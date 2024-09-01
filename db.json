@@ -190,6 +190,32 @@
       "intelligence": "89",
       "isAdopted": true,
       "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPV9aLfwg83WSuZG07nxJ5z_o6GjAxtWd4Mxeh2r4UKgKLFofx"
+    },
+    {
+      "id": "823d",
+      "name": "Josh",
+      "breed": "Austrilian Shepard",
+      "breedType": "Purebreed",
+      "origin": "Austrillia ",
+      "popularity": "10",
+      "temperament": "Hyper",
+      "hypoallergenic": "No",
+      "intelligence": "85",
+      "isAdopted": true,
+      "photo": "https://dogtime.com/wp-content/uploads/sites/12/2011/01/GettyImages-1310156914-e1691160249641.jpg?w=1024"
+    },
+    {
+      "id": "e52a",
+      "name": "August",
+      "breed": "Dalmatian",
+      "breedType": "Utility",
+      "origin": "Croatia",
+      "popularity": "6",
+      "temperament": "Hyper, Aggressive ",
+      "hypoallergenic": "Yes",
+      "intelligence": "45",
+      "isAdopted": true,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIYRdutU_4btbio81wE89yCFZkvVw_yw6JBA&s"
     }
   ]
 }

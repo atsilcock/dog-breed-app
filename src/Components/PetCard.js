@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import "../App.css"
 
-const PetCard = ({ breed }) => {
+const PetCard = ({ breed, setBreeds }) => {
   const [button, setButton] = useState(breed.isAdopted)
 
 function handleButton(){
@@ -12,13 +12,14 @@ function handleButton(){
       "Content-Type" : "application/json"
     }, 
     body: JSON.stringify({
-      isAdopted: true
+      isAdopted: !button
     })
   })
   .then(response => response.json())
   .then(updateBreed => {
     setButton(updateBreed.isAdopted)
   })
+  .then(data => setBreeds([...breed, data]))
   
 }
 

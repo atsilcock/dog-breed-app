@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PetCard from './PetCard';
 
-const Adopt = ({ breeds, search, handleSearch }) => {
+const Adopt = ({ breeds, search, handleSearch, setBreeds }) => {
   const [isAdopted, setIsAdopted] = useState(false);
 
   function handleFilterChange(event) {
@@ -19,7 +19,7 @@ const Adopt = ({ breeds, search, handleSearch }) => {
   // console.log(filteredBreeds)
 
   const mappedBreeds = filteredBreeds.map((breed) => (
-    <PetCard key={breed.id} breed={breed} />
+    <PetCard key={breed.id} breed={breed} setBreeds={setBreeds} />
   ));
 
   return (

@@ -38,7 +38,7 @@ useEffect(()=>{
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/adopt" element={<Adopt search={search} handleSearch={handleSearch} breeds={filterBreeds}/>} />
+        <Route path="/adopt" element={<Adopt search={search} handleSearch={handleSearch} breeds={filterBreeds} setBreeds={setBreeds}/>} />
         <Route path="/give" element={<Give breeds={breeds} setBreeds={setBreeds}/>} />
       </Routes>
     </Router>
